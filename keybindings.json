@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+c ctrl+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log($0);"
+    }
+  },
+  {
+    "key": "ctrl+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log($TM_LINE_NUMBER, $0);"
+    }
+  }
+]
